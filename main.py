@@ -1,7 +1,8 @@
 import sys
+from typing import NoReturn
 
 
-def main():
+def main() -> None:
     if len(sys.argv) != 2:
         print(f"Usage: {sys.argv[0]} <number>")
         sys.exit(1)
