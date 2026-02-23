@@ -1,18 +1,16 @@
+import argparse
 import sys
 
 
 def main():
-    if len(sys.argv) != 2:
-        print(f"Usage: {sys.argv[0]} <number>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Raise a number to a power (default: 2)")
+    parser.add_argument("number", type=float, help="The number to raise")
+    parser.add_argument("--power", type=float, default=2.0, help="The power to raise the number to (default: 2)")
 
-    try:
-        number = float(sys.argv[1])
-    except ValueError:
-        print(f"Error: '{sys.argv[1]}' is not a valid number")
-        sys.exit(1)
+    args = parser.parse_args()
 
-    print(f"{number} squared is {number ** 2}")
+    result = args.number ** args.power
+    print(f"{args.number} raised to the power of {args.power} is {result}")
 
 
 if __name__ == "__main__":
