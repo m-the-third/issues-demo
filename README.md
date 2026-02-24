@@ -25,4 +25,4 @@ $ uv run main.py -3
 ```sh
 uv run pytest
 ```
-License MIT or Apache2
+License MIT
