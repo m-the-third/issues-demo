@@ -26,3 +26,4 @@ $ uv run main.py -3
 uv run pytest
 ```
 License MIT
+Apache
