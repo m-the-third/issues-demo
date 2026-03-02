@@ -4,7 +4,7 @@ import sys
 
 def main():
     parser = argparse.ArgumentParser(description="Raise a number to a power (default: 2)")
-    parser.add_argument("number", type=float, help="The number to raise")
+    parser.add_argument("number", type=float, help="The number to raise..")
     parser.add_argument("--power", type=float, default=2.0, help="The power to raise the number to (default: 2)")
 
     args = parser.parse_args()
