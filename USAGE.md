@@ -1,1 +1,3 @@
 README.md
+
+License MIT
